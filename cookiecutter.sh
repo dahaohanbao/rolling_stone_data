@@ -1,0 +1,32 @@
+touch README.md
+touch LICENSE.md
+touch CITATION.md
+touch CONTRIBUTING.md
+touch CONDUCT.md
+mkdir data
+cd data
+touch birds_count_table.csv
+cd ..
+mkdir doc
+cd doc
+touch notebook.md
+touch manuscript.md
+cd ..
+mkdir results
+cd results
+touch summarized_results.csv
+touch counts_bar_plot.pdf
+touch counts_joy_plot.pdf
+cd ..
+mkdir src
+cd src
+touch sightings_analysis.py
+touch runall.py
+cd ..
+mv cookiecutter.sh src
+mkdir from_joe
+cd from_joe
+touch Email Discussions.rtf
+touch BirdsCountsFromJuly2001-tt-collected.xls
+touch birdsCountsJul-2002-mg-collected.xls
+cd ..
