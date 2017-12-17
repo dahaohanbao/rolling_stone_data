@@ -22,3 +22,13 @@ Rstudio
 
 R packages:`tidyverse`, `ezknitr`,`knitr`
 
+## How to Use
+
+- step1: Use `cd` to direct a locial folder
+`cd your_path`
+
+- step2: Clone the project repo `git clone https://github.com/dahaohanbao/rolling_stone_data.git`
+
+- step3: Go to the folder you just cloned `cd rolling_stone_data`
+- step4: Use makefile to run the code`make all`
+- step5: Use makefile to clean the result`make clean`
