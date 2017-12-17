@@ -1,0 +1,75 @@
+---
+title: "Rolling_Stone_Analyze"
+author: "Fang"
+date: "12/3/2017"
+output: md_document
+---
+```{r}
+
+library(tidyr)
+library(tidyverse)
+library(ggplot2)
+library(tidyr)
+library(stringr)
+library(ezknitr)
+
+#read data from github link
+rolling_stone <- read.csv("https://raw.githubusercontent.com/dahaohanbao/rolling_stone_data/master/albumlist.csv", header=TRUE)
+
+#show the first 6 line from rolling_stone table
+head(rolling_stone)
+```
+
+```{r}
+#read data file from locial folder
+
+
+#make a summary table for data set
+summary_rolling_stone <- summary(rolling_stone)
+summary_rolling_stone
+
+```
+
+>We have 500 data in total. Top3 artist are Bob Dylan, The beatles and The Rolling Stones. Top 3 Genres are Rock Funk and Hiphop.
+
+
+```{r,warning=FALSE}
+
+rs <- rolling_stone
+
+firstplot <- ggplot(rs,aes(Year))+
+  geom_histogram()+
+  ggtitle("Albums number via Year")
+firstplot
+
+```
+
+>From the Albums unmber via Year plot, we can see that from 1965 to 1980 is the most productive age of rolling stone and in 1970 rolling stone released the most albums.
+
+```{r}
+rs$Genre <- rs$Genre %>% 
+  str_replace("[[:punct:]]","") 
+
+unique(rs$Genre1)
+rs <- rs %>% 
+  separate(Genre, into = c("Genre1","Genre2"), sep=" ") 
+
+
+secondplot <- ggplot(rs,aes(Genre1))+
+  geom_bar(aes(fill=Genre1))+
+  ggtitle("Genre Distribution")
+secondplot
+```
+
+
+>From the Second plot, we can see that Rock music is the most music genre that released by rolling stone.
+
+
+```{r}
+thirdplot <- ggplot(rs,aes(x=Year))+
+  geom_freqpoly(aes(color=Genre1))+
+  ggtitle("Genre Distribution via Year")
+thirdplot
+```
+
+>From the third plot, we can see that rock music had big wave, which means that music genres that rolling stone release are different in different age.
