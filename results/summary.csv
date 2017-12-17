@@ -1,0 +1,8 @@
+"","      X","    Number","     Year","                                Album","               Artist","       Genre1","    Genre2","            Subgenre"
+"","Min.   :  1.0  ","Min.   :  1.0  ","Min.   :1955  ","Greatest Hits                      :  3  ","Bob Dylan         : 10  ","Rock      :316  ","       : 51  ","None            : 29  "
+"","1st Qu.:125.8  ","1st Qu.:125.8  ","1st Qu.:1970  ","Let It Be                          :  2  ","The Beatles       : 10  ","Funk      : 51  ","Hop    : 34  ","Pop Rock        : 22  "
+"","Median :250.5  ","Median :250.5  ","Median :1976  ","""Love and Theft""                   :  1  ","The Rolling Stones: 10  ","Electronic: 44  ","Pop    : 26  ","Soul            : 13  "
+"","Mean   :250.5  ","Mean   :250.5  ","Mean   :1979  ","#1 Record                          :  1  ","Bruce Springsteen :  8  ","Hip       : 34  ","Rock   : 21  ","Indie Rock      : 12  "
+"","3rd Qu.:375.2  ","3rd Qu.:375.2  ","3rd Qu.:1988  ","(What's the Story) Morning Glory?  :  1  ","The Who           :  7  ","Jazz      : 19  ","Blues  : 16  ","Alternative Rock: 11  "
+"","Max.   :500.0  ","Max.   :500.0  ","Max.   :2011  ","(pronounced 'leh-'nerd 'skin-'nerd):  1  ","David Bowie       :  5  ","Folk      : 13  ","(Other): 72  ","Classic Rock    : 10  "
+"",NA,NA,NA,"(Other)                            :491  ","(Other)           :450  ","(Other)   : 23  ","NA's   :280  ","(Other)         :403  "
